@@ -1,8 +1,13 @@
+import "@vkontakte/vkui/dist/vkui.css";
+
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
+import vkConnect from "@vkontakte/vk-connect";
 import * as serviceWorker from './serviceWorker';
+
+vkConnect.send("VKWebAppInit", {});
+
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

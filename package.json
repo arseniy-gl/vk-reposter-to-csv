@@ -1,6 +1,7 @@
 {
   "name": "vk-reposters-to-csv",
   "version": "0.1.0",
+  "homepage": "./",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -10,6 +11,9 @@
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
+    "@vkontakte/icons": "^1.13.0",
+    "@vkontakte/vk-connect": "^1.7.3",
+    "@vkontakte/vkui": "^3.0.0-alpha.4",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-scripts": "3.3.0",
@@ -19,7 +23,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "vk-miniapps-deploy"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -35,5 +40,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@vkontakte/vk-miniapps-deploy": "^0.0.11"
   }
 }
